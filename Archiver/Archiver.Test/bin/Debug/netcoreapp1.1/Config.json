@@ -1,0 +1,64 @@
+﻿{
+  "Src": "C:\\Projects\\Files\\src",
+  "Dest": "C:\\Projects\\Files\\dest",
+  "CurrentTimespan": "-180.00:00:00",
+  "FileTypes": [
+    {
+      "Extension": ".doc",
+      "IgnoredFiles": [
+        "_checkfile.doc"
+      ]
+    },
+    {
+      "Extension": ".docx",
+      "IgnoredFiles": []
+    },
+    {
+      "Extension": ".pdf",
+      "IgnoredFiles": []
+    },
+    {
+      "Extension": ".tif",
+      "IgnoredFiles": []
+    },
+    {
+      "Extension": ".tiff",
+      "IgnoredFiles": []
+    },
+    {
+      "Extension": ".dra",
+      "IgnoredFiles": []
+    },
+    {
+      "Extension": ".tmp",
+      "IgnoredFiles": []
+    },
+    {
+      "Extension": ".do_",
+      "IgnoredFiles": []
+    },
+    {
+      "Extension": ".wbk",
+      "IgnoredFiles": []
+    },
+    {
+      "Extension": ".odt",
+      "IgnoredFiles": []
+    },
+    {
+      "Extension": ".xls",
+      "IgnoredFiles": []
+    },
+    {
+      "Extension": ".xlsx",
+      "IgnoredFiles": []
+    },
+    {
+      "Extension": ".ppt",
+      "IgnoredFiles": []
+    }
+
+
+
+  ]
+}

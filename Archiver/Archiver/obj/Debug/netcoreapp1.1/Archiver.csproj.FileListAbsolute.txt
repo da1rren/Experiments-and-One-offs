@@ -1,0 +1,10 @@
+C:\Projects\Code\Experimental\darrens-experiments\Archiver\Archiver\bin\Debug\netcoreapp1.1\Config.json
+C:\Projects\Code\Experimental\darrens-experiments\Archiver\Archiver\bin\Debug\netcoreapp1.1\Archiver.deps.json
+C:\Projects\Code\Experimental\darrens-experiments\Archiver\Archiver\bin\Debug\netcoreapp1.1\Archiver.runtimeconfig.json
+C:\Projects\Code\Experimental\darrens-experiments\Archiver\Archiver\bin\Debug\netcoreapp1.1\Archiver.runtimeconfig.dev.json
+C:\Projects\Code\Experimental\darrens-experiments\Archiver\Archiver\bin\Debug\netcoreapp1.1\Archiver.dll
+C:\Projects\Code\Experimental\darrens-experiments\Archiver\Archiver\bin\Debug\netcoreapp1.1\Archiver.pdb
+C:\Projects\Code\Experimental\darrens-experiments\Archiver\Archiver\obj\Debug\netcoreapp1.1\Archiver.AssemblyInfo.cs
+C:\Projects\Code\Experimental\darrens-experiments\Archiver\Archiver\obj\Debug\netcoreapp1.1\Archiver.dll
+C:\Projects\Code\Experimental\darrens-experiments\Archiver\Archiver\obj\Debug\netcoreapp1.1\Archiver.pdb
+C:\Projects\Code\Experimental\darrens-experiments\Archiver\Archiver\obj\Debug\netcoreapp1.1\Archiver.csprojResolveAssemblyReference.cache
