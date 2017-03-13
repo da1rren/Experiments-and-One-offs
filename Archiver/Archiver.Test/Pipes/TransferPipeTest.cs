@@ -20,7 +20,7 @@ namespace Archiver.Test.Pipes
             //Arrange
             var config = ReusableMocks.MockConfig();
 
-            var file = Utility.CreateFile(config.Src, "Example.doc", DateTime.Now);
+            var file = TestUtilities.CreateFile(config.Src, "Example.doc", DateTime.Now);
 
             var pipe = new TransferPipe(
                 config,

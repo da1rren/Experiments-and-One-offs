@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using Newtonsoft.Json;
 
-namespace Archiver
+namespace Archiver.Config
 {
     public class Config : IConfig
     {
@@ -19,7 +19,7 @@ namespace Archiver
         public void Validate()
         {
             if (string.IsNullOrEmpty(Src))
-                throw new ArgumentException($"{nameof(Src)} - Root is required");
+                throw new ArgumentException($"{nameof(Src)} - CurrentLocation is required");
 
             if (string.IsNullOrEmpty(Dest))
                 throw new ArgumentException($"{nameof(Dest)} - Dest is required");
@@ -27,7 +27,7 @@ namespace Archiver
             if (!FileTypes.Any())
                 throw new ArgumentException($"{nameof(FileTypes)} - Please add a file type");
 
-            if (CurrentTimespan >= TimeSpan.Zero)
+            if (CurrentTimespan > TimeSpan.Zero)
                 throw new ArgumentException($"{nameof(CurrentTimespan)} - Current timespan is invalid");
 
             if (FileTypes.Count !=

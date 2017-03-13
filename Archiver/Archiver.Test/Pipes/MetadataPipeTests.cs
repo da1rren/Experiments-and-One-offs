@@ -24,7 +24,7 @@ namespace Archiver.Test.Pipes
             //Arrange
             var config = ReusableMocks.MockConfig();
 
-            var file = Utility.CreateFile(config.Src, "Example.doc", DateTime.Now);
+            var file = TestUtilities.CreateFile(config.Src, "Example.doc", DateTime.Now);
 
             var pipe = new MetadataPipe(
                 config,
@@ -46,7 +46,7 @@ namespace Archiver.Test.Pipes
             //Arrange
             var config = ReusableMocks.MockConfig();
 
-            var file = Utility.CreateFile(config.Src, "_checksum.doc", DateTime.Now);
+            var file = TestUtilities.CreateFile(config.Src, "_checksum.doc", DateTime.Now);
 
             var pipe = new MetadataPipe(
                 config,
@@ -68,7 +68,7 @@ namespace Archiver.Test.Pipes
             //Arrange
             var config = ReusableMocks.MockConfig();
 
-            var file = Utility.CreateFile(config.Src, "Example.pdf", DateTime.Now.Add(config.CurrentTimespan).AddDays(-1));
+            var file = TestUtilities.CreateFile(config.Src, "Example.pdf", DateTime.Now.Add(config.CurrentTimespan).AddDays(-1));
 
             var pipe = new MetadataPipe(
                 config,
@@ -90,7 +90,7 @@ namespace Archiver.Test.Pipes
         {
             //Arrange
             var config = ReusableMocks.MockConfig();
-            var file = Utility.CreateFile(config.Src, "Example.doc", DateTime.Now.Add(config.CurrentTimespan).AddDays(-1));
+            var file = TestUtilities.CreateFile(config.Src, "Example.doc", DateTime.Now.Add(config.CurrentTimespan).AddDays(-1));
 
             var pipe = new MetadataPipe(
                 config,

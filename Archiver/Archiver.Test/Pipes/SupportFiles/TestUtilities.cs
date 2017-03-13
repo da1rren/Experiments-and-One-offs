@@ -3,7 +3,7 @@ using System.IO;
 
 namespace Archiver.Test.Pipes.SupportFiles
 {
-    public static class Utility
+    public static class TestUtilities
     {
         public static string GetFolder()
         {

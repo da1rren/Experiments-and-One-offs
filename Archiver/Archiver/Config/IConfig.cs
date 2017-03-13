@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Archiver
+namespace Archiver.Config
 {
     public interface IConfig
     {

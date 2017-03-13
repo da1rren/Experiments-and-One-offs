@@ -1,7 +1,10 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
+using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Archiver.Config;
 using Archiver.Pipes;
 using Archiver.Pipes.Interfaces;
 using Archiver.Result;
@@ -61,29 +64,47 @@ namespace Archiver
                 Container.Resolve<IResultFactory>(),
                 metadataPipe);
 
+            var cancelSource = new CancellationTokenSource();
+
+            var ui = Task.Run(() => ReportStatus(Container.Resolve<IResultFactory>(), filePipe, metadataPipe, transferPipe, cancelSource.Token));
+
             await Task.WhenAll(filePipe.Execute(),
                 metadataPipe.Execute(),
-                transferPipe.Execute(),
-                ReportStatus(Container.Resolve<IResultFactory>(), filePipe, metadataPipe));
+                transferPipe.Execute());
+
+            cancelSource.Cancel();
+            await ui;
 
             var results = Container.Resolve<IResultFactory>();
+            Console.WriteLine("Complete.  Writing index file.");
             results.WriteFile();
         }
 
         private static async Task ReportStatus(
             IResultFactory results,
             IPipeline<string> filePipeline,
-            IPipeline<FileResult> metadataPipeline)
+            IPipeline<FileResult> metadataPipeline,
+            IQueued transferPipe,
+            CancellationToken token)
         {
             await Task.Run(() =>
             {
-                while (!metadataPipeline.Buffer.IsCompleted)
+                var start = DateTime.Now;
+                Console.CursorVisible = false;
+
+                while (!token.IsCancellationRequested)
                 {
-                    Console.WriteLine($"Files: {results.TotalFiles}");
-                    Console.WriteLine($"Errors: {results.TotalErrors}");
-                    Console.WriteLine($"Awaiting Analysis: {filePipeline.Buffer.Count}");
-                    Console.WriteLine($"Awaiting Transfer: {metadataPipeline.Buffer.Count}");
-                    Console.SetCursorPosition(0, Console.CursorTop - 4);
+                    var builder = new StringBuilder();
+
+                    builder.AppendLine(string.Format("{0,-40}",$"Files Completed: {results.TotalFiles}"));
+                    builder.AppendLine(string.Format("{0,-40}",$"Errors: {results.TotalErrors}"));
+                    builder.AppendLine(string.Format("{0,-40}",$"Awaiting Analysis: {filePipeline.Buffer.Count}"));
+                    builder.AppendLine(string.Format("{0,-40}",$"Awaiting Transfer: {transferPipe.GetWaitingTasks()}"));
+                    builder.AppendLine(string.Format("{0,-40}",$"Time elapsed: {(DateTime.Now - start)}"));
+                    builder.AppendLine(string.Format("{0,-40}",$"Size of transfer: {results.TotalSize / 1024 / 1024}MBs"));
+
+                    Console.Write(builder.ToString());
+                    Console.SetCursorPosition(0, Console.CursorTop - 6);
                     Thread.Sleep(25);
                 }
 
@@ -95,9 +116,9 @@ namespace Archiver
         {
             var builder = new ContainerBuilder();
 
-            builder.RegisterType<Config>()
+            builder.RegisterType<Config.Config>()
                 .As<IConfig>()
-                .OnActivating(x => x.ReplaceInstance(Config.Load(ConfigPath)))
+                .OnActivating(x => x.ReplaceInstance(Config.Config.Load(ConfigPath)))
                 .SingleInstance();
 
             builder.RegisterType<ResultFactory>()

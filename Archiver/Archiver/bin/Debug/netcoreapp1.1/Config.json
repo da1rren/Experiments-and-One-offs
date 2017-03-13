@@ -1,7 +1,7 @@
 ﻿{
-  "Src": "C:\\Projects\\Files\\src",
-  "Dest": "C:\\Projects\\Files\\dest",
-  "CurrentTimespan": "-180.00:00:00",
+  "Src": "C:\\Projects\\Files\\dest",
+  "Dest": "C:\\Projects\\Files\\src",
+  "CurrentTimespan": "0.00:00:00",
   "FileTypes": [
     {
       "Extension": ".doc",
@@ -11,7 +11,9 @@
     },
     {
       "Extension": ".docx",
-      "IgnoredFiles": []
+      "IgnoredFiles": [
+        "_checkfile.docx"
+      ]
     },
     {
       "Extension": ".pdf",

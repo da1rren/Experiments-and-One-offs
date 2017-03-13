@@ -5,7 +5,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
+using Archiver.Config;
 using Archiver.Pipes.Interfaces;
 
 namespace Archiver.Pipes
@@ -35,9 +37,8 @@ namespace Archiver.Pipes
             {
                 var types = _config.FileTypes;
 
-                while (!_filePipe.Buffer.IsCompleted)
+                while (_filePipe.Buffer.TryTake(out string file, Timeout.Infinite))
                 {
-                    var file = _filePipe.Buffer.Take();
                     var metadata = new FileInfo(file);
 
                     if (metadata.LastWriteTime > _archiveDate)

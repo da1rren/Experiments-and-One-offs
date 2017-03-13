@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using Archiver.Config;
 using Archiver.Pipes.Interfaces;
 using Archiver.Result;
 using Moq;
@@ -14,10 +15,10 @@ namespace Archiver.Test.Pipes.SupportFiles
             var mock = new Mock<IConfig>();
 
             mock.Setup(x => x.Src)
-                .Returns(SupportFiles.Utility.GetFolder());
+                .Returns(SupportFiles.TestUtilities.GetFolder());
 
             mock.Setup(x => x.Dest)
-                .Returns(SupportFiles.Utility.GetFolder());
+                .Returns(SupportFiles.TestUtilities.GetFolder());
 
             mock.Setup(x => x.FileTypes)
                 .Returns(new HashSet<FileType>()

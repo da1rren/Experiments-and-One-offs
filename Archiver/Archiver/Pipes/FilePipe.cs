@@ -6,7 +6,9 @@ using System.IO;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Archiver.Config;
 using Archiver.Pipes.Interfaces;
+using Archiver.Utility;
 
 namespace Archiver.Pipes
 {
@@ -31,39 +33,15 @@ namespace Archiver.Pipes
         {
             return Task.Run(() =>
             {
-                foreach (var file in Recurse(_config.Src))
+                var traverser = new FileTraverser(_config.Src, _token);
+                foreach (var file in traverser)
                 {
                     Buffer.Add(file, _token);
                 }
 
+                _resultFactory.AddErrors(traverser.ErrorResults);
                 Buffer.CompleteAdding();
             }, _token);
         }
-
-        private IEnumerable<string> Recurse(string folder)
-        {
-            if (_token.IsCancellationRequested) return new List<string>();
-
-            try
-            {
-                foreach (var directory in Directory.GetDirectories(folder))
-                {
-                    Recurse(directory);
-                }
-
-                return Directory.GetFiles(folder);
-            }
-            catch (Exception ex)
-            {
-                _resultFactory.AddError(new ErrorResult
-                {
-                    CurrentFile = folder,
-                    ErrorMessage = ex.Message
-                });
-            }
-
-            return new List<string>();
-        }
-
     }
 }

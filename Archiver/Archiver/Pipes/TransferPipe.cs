@@ -3,19 +3,23 @@ using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Archiver.Config;
 using Archiver.Pipes.Interfaces;
 
 namespace Archiver.Pipes
 {
-    public class TransferPipe : IExecute
+    public class TransferPipe : IExecute, IQueued
     {
         private readonly IConfig _config;
         private readonly IResultFactory _resultFactory;
         private readonly IPipeline<FileResult> _metadataPipe;
+        private readonly List<Task> _tasks;
+        private readonly object _lock = new object();
 
         public TransferPipe(IConfig config,
             IResultFactory results,
@@ -24,21 +28,21 @@ namespace Archiver.Pipes
             _config = config;
             _resultFactory = results;
             _metadataPipe = metadataPipe;
+            _tasks = new List<Task>(8096);
         }
 
         public Task Execute()
         {
             return Task.Run(() => 
             {
-                var tasks = new List<Task>(8096);
 
-                while (!_metadataPipe.Buffer.IsCompleted)
+                while (_metadataPipe.Buffer.TryTake(out FileResult result, Timeout.Infinite))
                 {
-                    var result = _metadataPipe.Buffer.Take();
-                    tasks.Add(Transfer(result));
+                    lock (_lock)
+                        _tasks.Add(Transfer(result));
                 }
 
-                Task.WaitAll(tasks.ToArray());
+                Task.WaitAll(_tasks.ToArray());
             });
         }
 
@@ -79,6 +83,14 @@ namespace Archiver.Pipes
                     _resultFactory.AddError(new ErrorResult{CurrentFile = metadata.SrcPath, ErrorMessage = ex.Message});
                 }
             });
+        }
+
+        public decimal GetWaitingTasks()
+        {
+            lock (_lock)
+            {
+                return _tasks.Count(x => x.Status != TaskStatus.RanToCompletion && x.Status != TaskStatus.Faulted);
+            }
         }
     }
 }

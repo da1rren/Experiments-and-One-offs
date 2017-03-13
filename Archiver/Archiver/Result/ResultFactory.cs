@@ -2,7 +2,9 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text;
+using Archiver.Config;
 
 namespace Archiver.Result
 {
@@ -41,6 +43,15 @@ namespace Archiver.Result
 
             TotalErrors++;
         }
+        public void AddErrors(IEnumerable<ErrorResult> results)
+        {
+            lock (_lock)
+            {
+                _results.ErrorResults.AddRange(results);
+            }
+        }
+
+
         public void WriteFile()
         {
             _results.CompleteTime = DateTime.Now;
@@ -48,6 +59,17 @@ namespace Archiver.Result
 
             var filename = Path.Combine(_config.Dest, ("Archive-" + DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss-fff") + ".json"));
             File.WriteAllText(filename, JsonConvert.SerializeObject(_results, Formatting.Indented));
+        }
+
+        public long TotalSize
+        {
+            get
+            {
+                lock (_lock)
+                {
+                    return _results.FileResults.Sum(x => x.Size);
+                }
+            }
         }
     }
 }
