@@ -27,3 +27,4 @@ C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ButtonClicker\ob
 C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ButtonClicker\obj\Debug\ButtonClicker.csproj.ResolveComReference.cache
 C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ButtonClicker\obj\Debug\ButtonClicker.exe
 C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ButtonClicker\obj\Debug\ButtonClicker.pdb
+C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ButtonClicker\obj\Debug\ButtonClicker.csprojResolveAssemblyReference.cache

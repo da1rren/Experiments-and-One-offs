@@ -1,6 +1,7 @@
 ﻿using System;
 using AutoIt;
 using System.Threading;
+using System.Threading.Tasks;
 using NLog;
 
 namespace ButtonClicker
@@ -31,6 +32,9 @@ namespace ButtonClicker
             }
             
             Log.Info("Starting Logging Framework");
+            Log.Info("Starting mouse jiggler");
+
+            Task.Factory.StartNew(Jiggler);
 
             while (true)
             {
@@ -46,6 +50,21 @@ namespace ButtonClicker
                 }
 
                 Thread.Sleep(50);
+            }
+        }
+
+        private static Task Jiggler()
+        {
+            int moveBy = 1;
+
+            while (true)
+            {
+                var point = AutoItX.MouseGetPos();
+
+                AutoItX.MouseMove(point.X + moveBy, point.Y, 0);
+
+                Thread.Sleep(10);
+                moveBy = moveBy * -1;
             }
         }
     }
