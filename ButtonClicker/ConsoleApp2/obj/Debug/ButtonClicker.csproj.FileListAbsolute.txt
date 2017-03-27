@@ -1,0 +1,15 @@
+C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ConsoleApp2\obj\Debug\ButtonClicker.csprojResolveAssemblyReference.cache
+C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ConsoleApp2\obj\Debug\Interop.AutoItX3Lib.dll
+C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ConsoleApp2\obj\Debug\ButtonClicker.csproj.ResolveComReference.cache
+C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ConsoleApp2\obj\Debug\ConsoleApp2.exe
+C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ConsoleApp2\obj\Debug\ConsoleApp2.pdb
+C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ConsoleApp2\bin\Debug\AutoItX3.dll
+C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ConsoleApp2\bin\Debug\AutoItX3_x64.dll
+C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ConsoleApp2\bin\Debug\NLog.config
+C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ConsoleApp2\bin\Debug\ConsoleApp2.exe.config
+C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ConsoleApp2\bin\Debug\ConsoleApp2.exe
+C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ConsoleApp2\bin\Debug\ConsoleApp2.pdb
+C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ConsoleApp2\bin\Debug\AutoItX3.Assembly.dll
+C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ConsoleApp2\bin\Debug\NLog.dll
+C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ConsoleApp2\bin\Debug\AutoItX3.Assembly.xml
+C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ConsoleApp2\bin\Debug\NLog.xml
