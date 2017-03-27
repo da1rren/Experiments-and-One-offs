@@ -11,7 +11,9 @@ namespace DatabaseArchiver
     {
         private static readonly Logger Log = LogManager.GetCurrentClassLogger();
 
-        private static readonly string[] Hosts = {"NHSG-TRAKAPPS", "ARI-SQL-PROSE", "OTTAWA", "NHSG-SQL-HOST1", "ARI-SQL-ECCI"};
+        private static readonly string[] Hosts = {"NHSG-TRAKAPPS"/*, "ARI-SQL-PROSE", "OTTAWA", "NHSG-SQL-HOST1", "ARI-SQL-ECCI"*/};
+
+        private static readonly List<Server> Servers = new List<Server>();
 
         static void Main(string[] args)
         {
@@ -31,16 +33,60 @@ namespace DatabaseArchiver
 
             Log.Info("Initializing");
 
-            var servers = new List<Server>();
+            var databases = await GetAllOfflineDatabases();
+
+
+            var databaseTasks = new List<Task>();
+
+            foreach (var database in databases)
+            {
+                databaseTasks.Add(database.Open());
+            }
+
+            await Task.WhenAll(databaseTasks);
+            databaseTasks.Clear();
+
+            foreach (var database in databases)
+            {
+                databaseTasks.Add(database.Backup(@"\\ehealthbackups\eHealthBackups\SQLDevBackups\Archive"));
+            }
+
+            await Task.WhenAll(databaseTasks);
+            Console.WriteLine("Ready to delete databases");
+            Console.WriteLine("ENSURE THEY HAVE BEEN BACKED UP");
+            Console.WriteLine("Press any key to delete");
+            Console.ReadKey();
+            databaseTasks.Clear();
+
+            foreach (var database in databases)
+            {
+                databaseTasks.Add(database.Delete());
+            }
+
+            await Task.WhenAll(databaseTasks);
+
+        }
+
+        private static async Task<List<Database>>  GetAllOfflineDatabases()
+        {
+            var connectTasks = new List<Task>();
 
             foreach (var host in Hosts)
             {
                 var server = new Server(host);
-                await server.Open();
-                servers.Add(server);
+                connectTasks.Add(server.Open());
+                Servers.Add(server);
             }
 
+            await Task.WhenAll(connectTasks.ToArray());
+
+            return Servers.Select(x => x
+                .GetOfflineDatabases())
+                .SelectMany(task => task.Result)
+                .ToList();
         }
+
+        
 
     }
 }

@@ -3,7 +3,7 @@ using AutoIt;
 using System.Threading;
 using NLog;
 
-namespace ConsoleApp2
+namespace ButtonClicker
 {
     class Program
     {
@@ -38,7 +38,7 @@ namespace ConsoleApp2
 
                 if (pointer)
                 {
-                    AutoItX.WinActive(windowTitle);
+                    AutoItX.WinActivate(windowTitle);
                     AutoItX.WinWaitActive(windowTitle);
                     Log.Info("I See the window");
                     AutoItX.Send("{ENTER}");

@@ -13,3 +13,17 @@ C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ConsoleApp2\bin\
 C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ConsoleApp2\bin\Debug\NLog.dll
 C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ConsoleApp2\bin\Debug\AutoItX3.Assembly.xml
 C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ConsoleApp2\bin\Debug\NLog.xml
+C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ButtonClicker\bin\Debug\AutoItX3.dll
+C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ButtonClicker\bin\Debug\AutoItX3_x64.dll
+C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ButtonClicker\bin\Debug\NLog.config
+C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ButtonClicker\bin\Debug\ButtonClicker.exe.config
+C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ButtonClicker\bin\Debug\ButtonClicker.exe
+C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ButtonClicker\bin\Debug\ButtonClicker.pdb
+C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ButtonClicker\bin\Debug\AutoItX3.Assembly.dll
+C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ButtonClicker\bin\Debug\NLog.dll
+C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ButtonClicker\bin\Debug\AutoItX3.Assembly.xml
+C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ButtonClicker\bin\Debug\NLog.xml
+C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ButtonClicker\obj\Debug\Interop.AutoItX3Lib.dll
+C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ButtonClicker\obj\Debug\ButtonClicker.csproj.ResolveComReference.cache
+C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ButtonClicker\obj\Debug\ButtonClicker.exe
+C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ButtonClicker\obj\Debug\ButtonClicker.pdb

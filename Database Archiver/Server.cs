@@ -16,10 +16,12 @@ namespace DatabaseArchiver
 
         private SqlConnection _connection;
 
+        private object _lock = new object();
+
         public Server(string hostname)
         {
-            ConnectionString = $"Server={Hostname}; Database=Master; Trusted_Connection=True;";
             Hostname = hostname;
+            ConnectionString = $"Server={Hostname}; Database=Master; Trusted_Connection=True;MultipleActiveResultSets=True;";
         }
 
         public async Task Open()
@@ -31,7 +33,18 @@ namespace DatabaseArchiver
         public async Task<IEnumerable<Database>> GetOfflineDatabases()
         {
             var offlineDatabases = await OfflineDatabaseNames();
-            return offlineDatabases.Select(x => new Database(Hostname, x));
+
+            return offlineDatabases.Select(x => new Database(this, Hostname, x));
+        }
+
+        public async Task OnlineDatabase(string name)
+        {
+            var result = await _connection.ExecuteAsync($"ALTER DATABASE {name} SET ONLINE WITH ROLLBACK IMMEDIATE");
+        }
+
+        public async Task OfflineDatabase(string name)
+        {
+            await _connection.ExecuteAsync($"ALTER DATABASE {name} SET OFFLINE WITH ROLLBACK IMMEDIATE");
         }
 
         private async Task<IEnumerable<string>> OfflineDatabaseNames()

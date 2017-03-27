@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ButtonClicker", "ConsoleApp2\ButtonClicker.csproj", "{B186DF5B-F83E-47DB-A1F9-AE109BA5EA96}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ButtonClicker", "ButtonClicker\ButtonClicker.csproj", "{B186DF5B-F83E-47DB-A1F9-AE109BA5EA96}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
