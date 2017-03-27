@@ -60,10 +60,9 @@ namespace ButtonClicker
             while (true)
             {
                 var point = AutoItX.MouseGetPos();
-
                 AutoItX.MouseMove(point.X + moveBy, point.Y, 0);
 
-                Thread.Sleep(10);
+                Thread.Sleep(60000);
                 moveBy = moveBy * -1;
             }
         }
