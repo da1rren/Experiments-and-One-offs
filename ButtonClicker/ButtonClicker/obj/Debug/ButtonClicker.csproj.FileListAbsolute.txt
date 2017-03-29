@@ -28,3 +28,6 @@ C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ButtonClicker\ob
 C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ButtonClicker\obj\Debug\ButtonClicker.exe
 C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ButtonClicker\obj\Debug\ButtonClicker.pdb
 C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ButtonClicker\obj\Debug\ButtonClicker.csprojResolveAssemblyReference.cache
+C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ButtonClicker\bin\Debug\Config.json
+C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ButtonClicker\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\Code\Experimental\darrens-experiments\ButtonClicker\ButtonClicker\bin\Debug\Newtonsoft.Json.xml

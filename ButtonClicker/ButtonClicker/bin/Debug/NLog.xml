@@ -9224,6 +9224,28 @@
             <param name="text">unclean string</param>
             <returns>string with only valid XML chars</returns>
         </member>
+        <member name="M:NLog.Internal.XmlHelper.XmlConvertToStringSafe(System.Object)">
+            <summary>
+            Converts object value to invariant format, and strips any invalid xml-characters
+            </summary>
+            <param name="value">Object value</param>
+            <returns>Object value converted to string</returns>
+        </member>
+        <member name="M:NLog.Internal.XmlHelper.XmlConvertToString(System.Object)">
+            <summary>
+            Converts object value to invariant format (understood by JavaScript)
+            </summary>
+            <param name="value">Object value</param>
+            <returns>Object value converted to string</returns>
+        </member>
+        <member name="M:NLog.Internal.XmlHelper.XmlConvertToString(System.Object,System.TypeCode@)">
+            <summary>
+            Converts object value to invariant format (understood by JavaScript)
+            </summary>
+            <param name="value">Object value</param>
+            <param name="objTypeCode">Object TypeCode</param>
+            <returns>Object value converted to string</returns>
+        </member>
         <member name="M:NLog.Internal.XmlHelper.WriteAttributeSafeString(System.Xml.XmlWriter,System.String,System.String,System.String,System.String)">
             <summary>
             Safe version of WriteAttributeString
@@ -20114,6 +20136,21 @@
             Serialized value.
             </returns>
         </member>
+        <member name="M:NLog.Targets.DefaultJsonSerializer.JsonStringEncode(System.Object,System.Boolean@)">
+            <summary>
+            Converts object value into JSON escaped string
+            </summary>
+            <param name="value">Object value</param>
+            <param name="encodeString">Should string be JSON encoded with quotes</param>
+            <returns>Object value converted to JSON escaped string</returns>
+        </member>
+        <member name="M:NLog.Targets.DefaultJsonSerializer.JsonStringEscape(System.String)">
+            <summary>
+            Checks input string if it needs JSON escaping, and makes necessary conversion
+            </summary>
+            <param name="text">Input string</param>
+            <returns>JSON escaped string</returns>
+        </member>
         <member name="P:NLog.Targets.DefaultJsonSerializer.Instance">
             <summary>
             Singleton instance of the serializer.
@@ -21927,6 +21964,12 @@
             <docgen category='Parameter Options' order='10' />
         </member>
         <member name="P:NLog.Targets.MethodCallParameter.Type">
+            <summary>
+            Gets or sets the type of the parameter. Obsolete alias for <see cref="P:NLog.Targets.MethodCallParameter.ParameterType"/>
+            </summary>
+            <docgen category="Parameter Options" order="10"/>
+        </member>
+        <member name="P:NLog.Targets.MethodCallParameter.ParameterType">
             <summary>
             Gets or sets the type of the parameter.
             </summary>

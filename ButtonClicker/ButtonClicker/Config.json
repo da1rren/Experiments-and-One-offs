@@ -1,0 +1,30 @@
+﻿{
+  "Title": "Clicking buttons so you dont have to",
+  "DefaultWindow": "Error Applying Security",
+  "JiggleMouse": true,
+  "PollDelay":  50,
+  "KeysSequences": [
+    {
+      "DisplayName": "Press Enter",
+      "Sequence": [
+        "{ENTER}"
+      ]
+    },
+    {
+      "DisplayName": "Press Alt C",
+      "Sequence": [
+        "{ALT DOWN}",
+        "{C}",
+        "{ALT UP}"
+      ]
+    },
+    {
+      "DisplayName": "Press Alt F4",
+      "Sequence": [
+        "{ALT DOWN}",
+        "{F4}",
+        "{ALT UP}"
+      ]
+    }
+  ]
+}
