@@ -5,11 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Dapper;
+using NLog;
 
 namespace DatabaseArchiver
 {
     public class Server
     {
+        private static readonly Logger Log = LogManager.GetCurrentClassLogger();
+
         public string Hostname { get; private set; }
 
         public string ConnectionString { get; private set; }
@@ -39,12 +42,26 @@ namespace DatabaseArchiver
 
         public async Task OnlineDatabase(string name)
         {
-            var result = await _connection.ExecuteAsync($"ALTER DATABASE {name} SET ONLINE WITH ROLLBACK IMMEDIATE");
+            try
+            {
+                var result = await _connection.ExecuteAsync($"ALTER DATABASE {name} SET ONLINE WITH ROLLBACK IMMEDIATE");
+            }
+            catch
+            {
+                Log.Error($"Could not online database {name}");
+            }
         }
 
         public async Task OfflineDatabase(string name)
         {
-            await _connection.ExecuteAsync($"ALTER DATABASE {name} SET OFFLINE WITH ROLLBACK IMMEDIATE");
+            try
+            {
+                await _connection.ExecuteAsync($"ALTER DATABASE {name} SET OFFLINE WITH ROLLBACK IMMEDIATE");
+            }
+            catch
+            {
+                Log.Error($"Could not offline database {name}");
+            }
         }
 
         private async Task<IEnumerable<string>> OfflineDatabaseNames()

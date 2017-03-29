@@ -1,0 +1,11 @@
+C:\Projects\Code\Experimental\darrens-experiments\Permission Checker\Permission Checker\bin\Release\netcoreapp1.1\win81-x64\hostpolicy.dll
+C:\Projects\Code\Experimental\darrens-experiments\Permission Checker\Permission Checker\bin\Release\netcoreapp1.1\win81-x64\hostfxr.dll
+C:\Projects\Code\Experimental\darrens-experiments\Permission Checker\Permission Checker\bin\Release\netcoreapp1.1\win81-x64\Permission Checker.exe
+C:\Projects\Code\Experimental\darrens-experiments\Permission Checker\Permission Checker\bin\Release\netcoreapp1.1\win81-x64\Permission Checker.deps.json
+C:\Projects\Code\Experimental\darrens-experiments\Permission Checker\Permission Checker\bin\Release\netcoreapp1.1\win81-x64\Permission Checker.runtimeconfig.json
+C:\Projects\Code\Experimental\darrens-experiments\Permission Checker\Permission Checker\bin\Release\netcoreapp1.1\win81-x64\Permission Checker.runtimeconfig.dev.json
+C:\Projects\Code\Experimental\darrens-experiments\Permission Checker\Permission Checker\bin\Release\netcoreapp1.1\win81-x64\Permission Checker.dll
+C:\Projects\Code\Experimental\darrens-experiments\Permission Checker\Permission Checker\bin\Release\netcoreapp1.1\win81-x64\Permission Checker.pdb
+C:\Projects\Code\Experimental\darrens-experiments\Permission Checker\Permission Checker\obj\Release\netcoreapp1.1\win81-x64\Permission Checker.AssemblyInfo.cs
+C:\Projects\Code\Experimental\darrens-experiments\Permission Checker\Permission Checker\obj\Release\netcoreapp1.1\win81-x64\Permission Checker.dll
+C:\Projects\Code\Experimental\darrens-experiments\Permission Checker\Permission Checker\obj\Release\netcoreapp1.1\win81-x64\Permission Checker.pdb

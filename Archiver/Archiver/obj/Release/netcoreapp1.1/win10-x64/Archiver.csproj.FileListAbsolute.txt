@@ -1,0 +1,12 @@
+C:\Projects\Code\Experimental\darrens-experiments\Archiver\Archiver\bin\Release\netcoreapp1.1\win10-x64\Config.json
+C:\Projects\Code\Experimental\darrens-experiments\Archiver\Archiver\bin\Release\netcoreapp1.1\win10-x64\hostpolicy.dll
+C:\Projects\Code\Experimental\darrens-experiments\Archiver\Archiver\bin\Release\netcoreapp1.1\win10-x64\hostfxr.dll
+C:\Projects\Code\Experimental\darrens-experiments\Archiver\Archiver\bin\Release\netcoreapp1.1\win10-x64\Archiver.exe
+C:\Projects\Code\Experimental\darrens-experiments\Archiver\Archiver\bin\Release\netcoreapp1.1\win10-x64\Archiver.deps.json
+C:\Projects\Code\Experimental\darrens-experiments\Archiver\Archiver\bin\Release\netcoreapp1.1\win10-x64\Archiver.runtimeconfig.json
+C:\Projects\Code\Experimental\darrens-experiments\Archiver\Archiver\bin\Release\netcoreapp1.1\win10-x64\Archiver.runtimeconfig.dev.json
+C:\Projects\Code\Experimental\darrens-experiments\Archiver\Archiver\bin\Release\netcoreapp1.1\win10-x64\Archiver.dll
+C:\Projects\Code\Experimental\darrens-experiments\Archiver\Archiver\bin\Release\netcoreapp1.1\win10-x64\Archiver.pdb
+C:\Projects\Code\Experimental\darrens-experiments\Archiver\Archiver\obj\Release\netcoreapp1.1\win10-x64\Archiver.AssemblyInfo.cs
+C:\Projects\Code\Experimental\darrens-experiments\Archiver\Archiver\obj\Release\netcoreapp1.1\win10-x64\Archiver.dll
+C:\Projects\Code\Experimental\darrens-experiments\Archiver\Archiver\obj\Release\netcoreapp1.1\win10-x64\Archiver.pdb

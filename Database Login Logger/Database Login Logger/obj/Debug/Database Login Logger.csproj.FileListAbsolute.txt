@@ -1,0 +1,19 @@
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\bin\Debug\Database Login Logger.exe.config
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\bin\Debug\Database Login Logger.exe
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\bin\Debug\Database Login Logger.pdb
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\bin\Debug\Dapper.dll
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\bin\Debug\NLog.dll
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\bin\Debug\Topshelf.dll
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\bin\Debug\Topshelf.NLog.dll
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\bin\Debug\Dapper.xml
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\bin\Debug\NLog.xml
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\bin\Debug\Topshelf.xml
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\bin\Debug\Topshelf.NLog.xml
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\obj\Debug\Database Login Logger.csprojResolveAssemblyReference.cache
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\obj\Debug\Database Login Logger.exe
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\obj\Debug\Database Login Logger.pdb
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\bin\Debug\Config.json
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\bin\Debug\MoreLinq.dll
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\bin\Debug\MoreLinq.xml
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\bin\Debug\Newtonsoft.Json.xml

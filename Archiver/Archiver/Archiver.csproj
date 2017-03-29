@@ -1,8 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
+    <OutputType>exe</OutputType>
     <TargetFramework>netcoreapp1.1</TargetFramework>
+    <ApplicationIcon />
+    <OutputTypeEx>exe</OutputTypeEx>
+    <StartupObject />
+
+    <RuntimeIdentifiers>
+      win7-x64;win8-x64;win81-x64;win10-x64
+    </RuntimeIdentifiers>
+
   </PropertyGroup>
 
   <ItemGroup>
