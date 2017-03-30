@@ -1,0 +1,63 @@
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\obj\Debug\Database Tasks.csprojResolveAssemblyReference.cache
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\obj\Debug\Database Login Logger.exe
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\obj\Debug\Database Login Logger.pdb
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\bin\Debug\Config.json
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\bin\Debug\Database Login Logger.exe.config
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\bin\Debug\Database Login Logger.exe
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\bin\Debug\Database Login Logger.pdb
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\bin\Debug\Autofac.dll
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\bin\Debug\Dapper.dll
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\bin\Debug\MoreLinq.dll
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\bin\Debug\NLog.dll
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\bin\Debug\Topshelf.dll
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\bin\Debug\Topshelf.NLog.dll
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\bin\Debug\Autofac.xml
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\bin\Debug\Dapper.xml
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\bin\Debug\MoreLinq.xml
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\bin\Debug\NLog.xml
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\bin\Debug\Topshelf.xml
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\bin\Debug\Topshelf.NLog.xml
+C:\Projects\Code\Experimental\darrens-experiments\Database Login Logger\Database Login Logger\bin\Debug\NLog.config
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\Config.json
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\NLog.config
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\Database Login Logger.exe.config
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\Database Login Logger.exe
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\Database Login Logger.pdb
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\Autofac.dll
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\Dapper.dll
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\Hangfire.Core.dll
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\Hangfire.SqlServer.dll
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\Microsoft.Owin.dll
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\Microsoft.Owin.Hosting.dll
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\MoreLinq.dll
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\NLog.dll
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\Owin.dll
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\Topshelf.dll
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\Topshelf.NLog.dll
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\Autofac.xml
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\Dapper.xml
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\Hangfire.Core.xml
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\Hangfire.SqlServer.xml
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\Microsoft.Owin.xml
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\Microsoft.Owin.Hosting.xml
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\MoreLinq.xml
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\NLog.xml
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\Topshelf.xml
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\Topshelf.NLog.xml
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\es\Hangfire.Core.resources.dll
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\zh\Hangfire.Core.resources.dll
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\obj\Debug\Database Tasks.csprojResolveAssemblyReference.cache
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\obj\Debug\Database Login Logger.exe
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\obj\Debug\Database Login Logger.pdb
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\Microsoft.Owin.Host.HttpListener.dll
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\Hangfire.Dashboard.Authorization.dll
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\Hangfire.Dashboard.Authorization.xml
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\Hangfire.Console.dll
+C:\Projects\Code\Experimental\darrens-experiments\Database Tasks\bin\Debug\Hangfire.Console.xml
